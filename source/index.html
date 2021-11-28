@@ -39,7 +39,7 @@
         <div class="wrapper">
           <h2 class="presentation__title">Взгляните на жизнь иначе!</h2>
           <img class="presentation__img" src="img/presentation-img.png" width="320" height="286" alt="Демонстрация обработанной приложением фотографии">
-          <button class="presentation__button button" type="button">Скачать приложение</button>
+          <a class="presentation__link button-link" href="#">Скачать приложение</a>
           <ul class="device-list">
             <li class="device-list__item">
               <a class="device-list__link" href="#">
@@ -96,25 +96,78 @@
           <h2 class="visually-hidden reviews__title">Отзывы о нас</h2>
           <div class="slide">
             <blockquote class="reviews__item slide__item">
-              <cite class="reviews__autor slide__autor">Николай Петров</cite>
-              <p class="reviews__autor-info slide__autor-info">25 лет, водитель трамвая</p>
-              <p class="reviews__text slide__text">
+              <cite class="reviews__autor">Николай Петров</cite>
+              <p class="reviews__autor-info">25 лет, водитель трамвая</p>
+              <p class="reviews__text">
                 «Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»
               </p>
             </blockquote>
+            <ul class="slide-button reviews__button slide__button">
+              <li>
+                <button class="slide-button__switch--active" type="button">
+                  <span class="visually-hidden">Первый слайд</span>
+                </button>
+              </li>
+              <li>
+                <button class="slide-button__switch" type="button">
+                  <span class="visually-hidden">Второй слайд</span>
+                </button>
+              </li>
+              <li>
+                <button class="slide-button__switch" type="button">
+                  <span class="visually-hidden">Третий слайд</span>
+                </button>
+              </li>
+            </ul>
+            <div class="slide__navigation">
+              <button class="slide__navigation--back" type="button"><span class="visually-hidden">Назад</span></button>
+              <button class="slide__navigation--next" type="button"><span class="visually-hidden">Вперёд</span></button>
+            </div>
           </div>
-          <ul class="slide-button reviews__button">
-            <li>
-              <button class="slide-button__switch––active" type="button">
+        </div>
+      </section>
+
+      <section class="rates">
+        <h2 class="visually-hidden rates__title">Наши тарифы</h2>
+        <div class="rates-slide">
+          <table class="table">
+            <tr class="table__tr">
+              <th class="table__th table__th--hidden"></th>
+              <th class="table__th">База<span class="table__price">1,99 USD</span></th>
+              <th class="table__th"><span class="table__th-label">ХИТ</span>СТАНДАРТ<span class="table__price">3,99 USD</span></th>
+              <th class="table__th">АНЛИМ<span class="table__price">9,99 USD</span></th>
+            </tr>
+            <tr class="table__tr">
+              <td class="table__td">Розовый фильтр</td>
+              <td class="table__td table__td--on"><span class="visually-hidden">Функция присутствует</span></td>
+              <td class="table__td table__td--on"><span class="visually-hidden">Функция присутствует</span></td>
+              <td class="table__td table__td--on"><span class="visually-hidden">Функция присутствует</span></td>
+            </tr>
+            <tr class="table__tr">
+              <td class="table__td">Смайлики</td>
+              <td class="table__td table__td--off"><span class="visually-hidden">Функция отсутствует</span></td>
+              <td class="table__td table__td--on"><span class="visually-hidden">Функция присутствует</span></td>
+              <td class="table__td table__td--on"><span class="visually-hidden">Функция присутствует</span></td>
+            </tr>
+            <tr class="table__tr">
+              <td class="table__td">Комментарии</td>
+              <td class="table__td table__td--off"><span class="visually-hidden">Функция отсутствует</span></td>
+              <td class="table__td table__td--off"><span class="visually-hidden">Функция отсутствует</span></td>
+              <td class="table__td table__td--on"><span class="visually-hidden">Функция присутствует</span></td>
+            </tr>
+          </table>
+          <ul class="slide-button rates-slide__button">
+            <li class="slide-button__item">
+              <button class="slide-button__switch" type="button">
                 <span class="visually-hidden">Первый слайд</span>
               </button>
             </li>
-            <li>
-              <button class="slide-button__switch" type="button">
+            <li class="slide-button__item">
+              <button class="slide-button__switch--active" type="button">
                 <span class="visually-hidden">Второй слайд</span>
               </button>
             </li>
-            <li>
+            <li class="slide-button__item">
               <button class="slide-button__switch" type="button">
                 <span class="visually-hidden">Третий слайд</span>
               </button>
@@ -123,68 +176,21 @@
         </div>
       </section>
 
-      <section class="rates">
-        <h2 class="visually-hidden rates__title">Наши тарифы</h2>
-        <table class="table">
-          <tr class="table__tr">
-            <th class="table__th––hidden"></th>
-            <th class="table__th">База<span class="table__price">1,99 USD</span></th>
-            <th class="table__th"><span class="table__th-label">ХИТ</span>СТАНДАРТ<span class="table__price">3,99 USD</span></th>
-            <th class="table__th">АНЛИМ<span class="table__price">9,99 USD</span></th>
-          </tr>
-          <tr class="table__tr">
-            <td class="table__td">Розовый фильтр</td>
-            <td class="table__td––on"><span class="visually-hidden">Функция присутствует</span></td>
-            <td class="table__td––on"><span class="visually-hidden">Функция присутствует</span></td>
-            <td class="table__td––on"><span class="visually-hidden">Функция присутствует</span></td>
-          </tr>
-          <tr class="table__tr">
-            <td class="table__td">Смайлики</td>
-            <td class="table__td––off"><span class="visually-hidden">Функция отсутствует</span></td>
-            <td class="table__td––on"><span class="visually-hidden">Функция присутствует</span></td>
-            <td class="table__td––on"><span class="visually-hidden">Функция присутствует</span></td>
-          </tr>
-          <tr class="table__tr">
-            <td class="table__td">Комментарии</td>
-            <td class="table__td––off"><span class="visually-hidden">Функция отсутствует</span></td>
-            <td class="table__td––off"><span class="visually-hidden">Функция отсутствует</span></td>
-            <td class="table__td––on"><span class="visually-hidden">Функция присутствует</span></td>
-          </tr>
-        </table>
-        <ul class="slide-button rates__button">
-          <li class="slide-button__item">
-            <button class="slide-button__switch" type="button">
-              <span class="visually-hidden">Первый слайд</span>
-            </button>
-          </li>
-          <li class="slide-button__item">
-            <button class="slide-button__switch––active" type="button">
-              <span class="visually-hidden">Второй слайд</span>
-            </button>
-          </li>
-          <li class="slide-button__item">
-            <button class="slide-button__switch" type="button">
-              <span class="visually-hidden">Третий слайд</span>
-            </button>
-          </li>
-        </ul>
-      </section>
-
       <section class="contacts">
         <div class="wrapper">
           <h2 class="contacts__title">Остались вопросы? Свяжитесь с нами!</h2>
           <p class="contacts__text">Звоните:</p>
           <p class="contacts__phone">
-            <a class="contacts__phone-link" href="tel:+78125556666"><span class="visually-hidden">Контактный телефон</span>
+            <a class="contacts__link" href="tel:+78125556666"><span class="visually-hidden">Контактный телефон</span>
               +7 (812) 555-66-66</a>
           </p>
           <p class="contacts__text">Пишите:</p>
-          <p class="contacts__mail-link">
-            <a class="contacts__mail" href="malto:mail@htmlacademy.ru"><span class="visually-hidden">Адрес электронной почты</span>mail@htmlacademy.ru</a>
+          <p class="contacts__mail">
+            <a class="contacts__link" href="malto:mail@htmlacademy.ru"><span class="visually-hidden">Адрес электронной почты</span>mail@htmlacademy.ru</a>
           </p>
           <p class="contacts__text">Приезжайте в гости:</p>
           <p class="contacts__address">
-            ул. Большая Конюшенная, 19/8
+            <a class="contacts__link" href="#">ул. Большая Конюшенная, 19/8</a>
           </p>
         </div>
         <div class="map-box contacts__map">
@@ -204,19 +210,16 @@
           <li class="socials-list__item">
             <a class="socials-list__link" href="#">
               <span class="visually-hidden">Твиттер</span>
-              <img class="socials-list__img" src="img/twitter-icon.svg" width="18" height="14" alt="">
             </a>
           </li>
           <li class="socials-list__item">
             <a class="socials-list__link" href="#">
               <span class="visually-hidden">Фейсбук</span>
-              <img class="socials-list__img" src="img/facebook-icon.svg" width="9" height="18" alt="">
             </a>
           </li>
           <li class="socials-list__item">
             <a class="socials-list__link" href="#">
               <span class="visually-hidden">Ютуб</span>
-              <img class="socials-list__img" src="img/youtube-icon.svg" width="15" height="13" alt="">
             </a>
           </li>
         </ul>
