@@ -3,44 +3,47 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Пинк</title>
+    <link rel="stylesheet" href="css/style.css">
   </head>
   <body class="page__body">
 
-    <header class="header">
-      <div class="wrapper">
+    <header class="header page__body-header">
+      <div class="header__box">
         <a class="logo header__logo">
           <img class="logo__img" src="img/logo-pink.svg" width="74" height="23" alt="Логотип сайта Pink">
         </a>
-        <nav class="nav header__nav">
-          <button class="nav__toggle" type="button">
-            <span class="visually-hidden">Открыть меню</span>
-          </button>
-          <ul class="nav__list">
-            <li class="nav__item">
-              <a class="nav__link" href="#">главная</a>
-            </li>
-            <li class="nav__item">
-              <a class="nav__link" href="catalog.html">фотографии</a>
-            </li>
-            <li class="nav__item">
-              <a class="nav__link" href="form.html">конкурс</a>
-            </li>
-            <li class="nav__item">
-              <a class="nav__link" href="#">html academy</a>
-            </li>
-          </ul>
-        </nav>
+        <button class="header__toggle" type="button">
+          <span class="visually-hidden">Открыть меню</span>
+        </button>
       </div>
+      <nav class="nav header__nav">
+        <ul class="nav__list">
+          <li class="nav__item">
+            <a class="nav__link" href="#">главная</a>
+          </li>
+          <li class="nav__item">
+            <a class="nav__link" href="catalog.html">фотографии</a>
+          </li>
+          <li class="nav__item">
+            <a class="nav__link" href="form.html">конкурс</a>
+          </li>
+          <li class="nav__item">
+            <a class="nav__link" href="#">html academy</a>
+          </li>
+        </ul>
+      </nav>
     </header>
 
     <main class="page__main">
       <h1 class="visually-hidden page__title">Мобильное приложение "Пинк"</h1>
-      <section class="presentation">
+      <section class="presentation page__body-presentation">
         <div class="wrapper">
           <h2 class="presentation__title">Взгляните на жизнь иначе!</h2>
-          <img class="presentation__img" src="img/presentation-img.png" width="320" height="286" alt="Демонстрация обработанной приложением фотографии">
+        </div>
+        <img class="presentation__img" src="img/presentation-img.png" width="320" height="286" alt="Демонстрация обработанной приложением фотографии">
+        <div class="presentation__lower wrapper">
           <a class="presentation__link button-link" href="#">Скачать приложение</a>
-          <ul class="device-list">
+          <ul class="presentation__list device-list">
             <li class="device-list__item">
               <a class="device-list__link" href="#">
                 <img class="device-list__img" src="img/apple-icon.svg" width="47" height="56" alt="Логотип apple">
@@ -61,10 +64,12 @@
         </div>
       </section>
 
-      <section class="advantages">
+      <section class="advantages page__body-advantages">
         <div class="wrapper">
-          <h2 class="advantages__title">Устали от серости мегаполиса? Нам есть, что вам предложить!</h2>
-          <ul class="advantages-list">
+          <h2 class="advantages__title"><span class="advantages__title-box">Устали от серости мегаполиса?</span>Нам есть, что вам предложить!</h2>
+        </div>
+        <div class="advantages__list-box">
+          <ul class="advantages-list advantages__list-wrapper">
             <li class="advantages-list__item">
               <h3 class="advantages-list__title">Поднимает настроение</h3>
               <p class="advantages-list__text">Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!</p>
@@ -81,7 +86,7 @@
         </div>
       </section>
 
-      <article class="news">
+      <article class="news page__body-news">
         <div class="wrapper">
           <h2 class="news__title">Эффект на 24 часа!</h2>
           <p class="news__text">Британские ученые провели исследования и доказали, что положительный эффект от использования приложения длится целые сутки!</p>
@@ -91,7 +96,7 @@
         </div>
       </article>
 
-      <section class="reviews">
+      <section class="reviews page__body-reviews">
         <div class="wrapper">
           <h2 class="visually-hidden reviews__title">Отзывы о нас</h2>
           <div class="slide">
@@ -131,33 +136,33 @@
         </div>
       </section>
 
-      <section class="rates">
+      <section class="rates page__body-rates">
         <h2 class="visually-hidden rates__title">Наши тарифы</h2>
-        <div class="slide-rates">
+        <div class="slide-rates wrapper">
           <table class="table slide-rates__item">
             <tr class="table__tr">
-              <th class="table__th table__th--hidden"></th>
-              <th class="table__th">База<span class="table__price">1,99 USD</span></th>
-              <th class="table__th"><span class="table__th-label">ХИТ</span>СТАНДАРТ<span class="table__price">3,99 USD</span></th>
+              <th class="table__th table__th--hidden visually-hidden"></th>
+              <th class="table__th">База<br><span class="table__price">1,99 USD</span></th>
+              <th class="table__th"><span class="table__th-label visually-hidden">ХИТ</span>СТАНДАРТ<span class="table__price">3,99 USD</span></th>
               <th class="table__th">АНЛИМ<span class="table__price">9,99 USD</span></th>
             </tr>
             <tr class="table__tr">
               <td class="table__td">Розовый фильтр</td>
-              <td class="table__td table__td--on"><span class="visually-hidden">Функция присутствует</span></td>
-              <td class="table__td table__td--on"><span class="visually-hidden">Функция присутствует</span></td>
-              <td class="table__td table__td--on"><span class="visually-hidden">Функция присутствует</span></td>
+              <td class="table__td table__td--on">Розовый фильтр<span class="visually-hidden">Функция присутствует</span></td>
+              <td class="table__td table__td--on">Розовый фильтр<span class="visually-hidden">Функция присутствует</span></td>
+              <td class="table__td table__td--on">Розовый фильтр<span class="visually-hidden">Функция присутствует</span></td>
             </tr>
             <tr class="table__tr">
               <td class="table__td">Смайлики</td>
-              <td class="table__td table__td--off"><span class="visually-hidden">Функция отсутствует</span></td>
-              <td class="table__td table__td--on"><span class="visually-hidden">Функция присутствует</span></td>
-              <td class="table__td table__td--on"><span class="visually-hidden">Функция присутствует</span></td>
+              <td class="table__td table__td--off">Смайлики<span class="visually-hidden">Функция отсутствует</span></td>
+              <td class="table__td table__td--on">Смайлики<span class="visually-hidden">Функция присутствует</span></td>
+              <td class="table__td table__td--on">Смайлики<span class="visually-hidden">Функция присутствует</span></td>
             </tr>
             <tr class="table__tr">
               <td class="table__td">Комментарии</td>
-              <td class="table__td table__td--off"><span class="visually-hidden">Функция отсутствует</span></td>
-              <td class="table__td table__td--off"><span class="visually-hidden">Функция отсутствует</span></td>
-              <td class="table__td table__td--on"><span class="visually-hidden">Функция присутствует</span></td>
+              <td class="table__td table__td--off">Комментарии<span class="visually-hidden">Функция отсутствует</span></td>
+              <td class="table__td table__td--off">Комментарии<span class="visually-hidden">Функция отсутствует</span></td>
+              <td class="table__td table__td--on">Комментарии<span class="visually-hidden">Функция присутствует</span></td>
             </tr>
           </table>
           <ul class="slide-button slide-rates__btn">
@@ -180,7 +185,7 @@
         </div>
       </section>
 
-      <section class="contacts">
+      <section class="contacts page__body-contacts">
         <div class="wrapper">
           <h2 class="contacts__title">Остались вопросы? Свяжитесь с нами!</h2>
           <p class="contacts__text">Звоните:</p>
@@ -204,7 +209,7 @@
       </section>
     </main>
 
-    <footer class="footer">
+    <footer class="footer page__body-footer">
       <div class="wrapper">
         <div class="glasses-logo footer__logo">
           <a class="glasses-logo__link" href="#">
@@ -213,17 +218,17 @@
         </div>
         <ul class="socials-list footer__socials-list">
           <li class="socials-list__item">
-            <a class="socials-list__link" href="#">
+            <a class="socials-list__link socials-list__link--twitter" href="#">
               <span class="visually-hidden">Твиттер</span>
             </a>
           </li>
           <li class="socials-list__item">
-            <a class="socials-list__link" href="#">
+            <a class="socials-list__link socials-list__link--facebook" href="#">
               <span class="visually-hidden">Фейсбук</span>
             </a>
           </li>
           <li class="socials-list__item">
-            <a class="socials-list__link" href="#">
+            <a class="socials-list__link socials-list__link--youtube" href="#">
               <span class="visually-hidden">Ютуб</span>
             </a>
           </li>

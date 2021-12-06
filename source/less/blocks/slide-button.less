@@ -1,0 +1,28 @@
+.slide-button {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  width: 56px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.slide-button__switch {
+  display: inline-block;
+  vertical-align: middle;
+  cursor: pointer;
+  background-color: @blue;
+  width: 6px;
+  height: 6px;
+  border: none;
+  border-radius: 50%;
+  opacity: 0.3;
+  padding: 0;
+}
+
+.slide-button__switch--active {
+  background-color: transparent;
+  border: 3px solid @blue;
+  border-radius: 50%;
+  opacity: 1;
+}

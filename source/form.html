@@ -3,18 +3,21 @@
   <head>
     <meta charset="utf-8">
     <title>Пинк форма</title>
+    <link rel="stylesheet" href="css/style.css">
   </head>
-<body>
+<body class="page__body">
 
   <header class="header">
     <div class="wrapper">
-      <a class="logo header__logo" href="index.html">
-        <img class="logo__img" src="img/logo-pink.svg" width="74" height="23" alt="Логотип сайта Pink">
-      </a>
-      <nav class="nav header__nav">
-        <button class="nav__toggle" type="button">
+      <div class="header__box">
+        <a class="logo header__logo">
+          <img class="logo__img" src="img/logo-pink.svg" width="74" height="23" alt="Логотип сайта Pink">
+        </a>
+        <button class="header__toggle" type="button">
           <span class="visually-hidden">Открыть меню</span>
         </button>
+      </div>
+      <nav class="nav header__nav">
         <ul class="nav__list">
           <li class="nav__item">
             <a class="nav__link" href="index.html">главная</a>
@@ -34,14 +37,16 @@
   </header>
 
   <main class="page__main">
-    <h1 class="head-title">Конкурс на самое безбашенное путешествие с Пинк</h1>
+    <h1 class="head-title page__main-contest">Конкурс на самое безбашенное путешествие с Пинк</h1>
     <section class="contest">
       <div class="wrapper">
         <h2 class="contest__title visually-hidden">Форма для участия в конкурсе</h2>
         <p class="contest__text content-text">
           Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту!
         </p>
-        <form class="form" action="https://echo.htmlacademy.ru" method="get">
+      </div>
+      <form class="form" action="https://echo.htmlacademy.ru" method="get">
+        <div class="wrapper">
           <fieldset class="form__fildset">
             <legend class="form__legend visually-hidden">Личные данные</legend>
             <p class="form__wrap">
@@ -57,36 +62,42 @@
               <input class="form__control form__control--text" type="text" name="patronymic" id="patronymic" placeholder="Ну и отчество тоже">
             </p>
           </fieldset>
-          <fieldset class="form__fildset">
-            <legend class="form__legend legend">Ваши безбашенные достижения в путешествии</legend>
-            <ul class="form__achievement-list">
-              <li class="form__achievement-list-item">
-                <input class="form__control form__control--checkbox visually-hidden" type="checkbox" name="selfie" id="selfie" checked>
-                <label class="form__label form__label--checkbox" for="selfie">Сделал селфи с акулой</label>
-              </li>
-              <li class="form__achievement-list-item">
-                <input class="form__control form__control--checkbox visually-hidden" type="checkbox" name="Tan" id="Tan" checked>
-                <label class="form__label form__label--checkbox" for="Tan">Обгорел на пляже</label>
-              </li>
-              <li class="form__achievement-list-item">
-                <input class="form__control form__control--checkbox visually-hidden" type="checkbox" name="сhuck-norris" id="сhuck-norris">
-                <label class="form__label form__label--checkbox" for="сhuck-norris">Видел Чака Норриса</label>
-              </li>
-              <li class="form__achievement-list-item">
-                <input class="form__control form__control--checkbox visually-hidden" type="checkbox" name="souvenir" id="souvenir">
-                <label class="form__label form__label--checkbox" for="souvenir">Накупил сувениров</label>
-              </li>
-              <li class="form__achievement-list-item">
-                <input class="form__control form__control--checkbox visually-hidden" type="checkbox" name="tower" id="tower" checked>
-                <label class="form__label form__label--checkbox" for="tower">Удержал башню</label>
-              </li>
-              <li class="form__achievement-list-item">
-                <input class="form__control form__control--checkbox visually-hidden" type="checkbox" name="hotel" id="hotel">
-                <label class="form__label form__label--checkbox" for="hotel">Разгромил отель</label>
-              </li>
-            </ul>
-          </fieldset>
-          <fieldset class="form__fildset">
+        </div>
+        <div class="form__fildset-box">
+          <div class="wrapper">
+            <fieldset class="form__fildset">
+              <legend class="form__legend legend">Ваши безбашенные достижения в путешествии</legend>
+              <ul class="form__achievement-list">
+                <li class="form__achievement-list-item">
+                  <input class="form__control form__control--checkbox visually-hidden" type="checkbox" name="selfie" id="selfie" checked>
+                  <label class="form__label form__label--checkbox" for="selfie">Сделал селфи с акулой</label>
+                </li>
+                <li class="form__achievement-list-item">
+                  <input class="form__control form__control--checkbox visually-hidden" type="checkbox" name="Tan" id="Tan" checked>
+                  <label class="form__label form__label--checkbox" for="Tan">Обгорел на пляже</label>
+                </li>
+                <li class="form__achievement-list-item">
+                  <input class="form__control form__control--checkbox visually-hidden" type="checkbox" name="сhuck-norris" id="сhuck-norris">
+                  <label class="form__label form__label--checkbox" for="сhuck-norris">Видел Чака Норриса</label>
+                </li>
+                <li class="form__achievement-list-item">
+                  <input class="form__control form__control--checkbox visually-hidden" type="checkbox" name="souvenir" id="souvenir">
+                  <label class="form__label form__label--checkbox" for="souvenir">Накупил сувениров</label>
+                </li>
+                <li class="form__achievement-list-item">
+                  <input class="form__control form__control--checkbox visually-hidden" type="checkbox" name="tower" id="tower" checked>
+                  <label class="form__label form__label--checkbox" for="tower">Удержал башню</label>
+                </li>
+                <li class="form__achievement-list-item">
+                  <input class="form__control form__control--checkbox visually-hidden" type="checkbox" name="hotel" id="hotel">
+                  <label class="form__label form__label--checkbox" for="hotel">Разгромил отель</label>
+                </li>
+              </ul>
+            </fieldset>
+          </div>
+        </div>
+        <div class="wrapper">
+          <fieldset class="form__fildset form__fildset-contacts">
             <legend class="form__legend visually-hidden">контактная информация</legend>
             <p class="form__wrap">
               <label class="form__label form__label--legend legend" for="phone">НОМЕР ТЕЛЕФОНА</label>
@@ -97,35 +108,42 @@
               <input class="form__control form__control--text" type="email" name="email" id="email" placeholder="Введите почту *">
             </p>
           </fieldset>
+        </div>
+        <div class="form__fildset-box">
+          <div class="wrapper">
+            <fieldset class="form__fildset">
+              <legend class="form__legend legend">С каким приложением путешествовали?</legend>
+              <ul class="form__applications-list">
+                <li class="form__applications-list-item">
+                  <input class="form__control form__control--radio visually-hidden" type="radio" name="application" id="ios" value="ios" checked>
+                  <label class="form__label form__label--radio" for="ios">Pink для iOS</label>
+                </li>
+                <li class="form__applications-list-item">
+                  <input class="form__control form__control--radio visually-hidden" type="radio" name="application" id="android" value="android">
+                  <label class="form__label form__label--radio" for="android">Pink на Android</label>
+                </li>
+                <li class="form__applications-list-item">
+                  <input class="form__control form__control--radio visually-hidden" type="radio" name="application" id="windows" value="windows">
+                  <label class="form__label form__label--radio" for="windows">Windows Phone</label>
+                </li>
+              </ul>
+            </fieldset>
+          </div>
+        </div>
+        <div class="wrapper">
           <fieldset class="form__fildset">
-            <legend class="form__legend legend">С каким приложением путешествовали?</legend>
-            <ul class="form__applications-list">
-              <li class="form__applications-list-item">
-                <input class="form__control form__control--radio visually-hidden" type="radio" name="application" id="ios" value="ios" checked>
-                <label class="form__label form__label--radio" for="ios">Pink для iOS</label>
-              </li>
-              <li class="form__applications-list-item">
-                <input class="form__control form__control--radio visually-hidden" type="radio" name="application" id="android" value="android">
-                <label class="form__label form__label--radio" for="android">Pink на Android</label>
-              </li>
-              <li class="form__applications-list-item">
-                <input class="form__control form__control--radio visually-hidden" type="radio" name="application" id="windows" value="windows">
-                <label class="form__label form__label--radio" for="windows">Windows Phone</label>
-              </li>
-            </ul>
-          </fieldset>
-          <fieldset class="form__fildset">
-            <p class="form__wrap">
-              <label class="form__label form__label--legend legend" for="text">ОПИШИТЕ СВОИ ЭМОЦИИ</label>
-              <textarea name="text" id="text" cols="30" rows="10" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
+            <p class="form__wrap-textarea">
+              <label class="form__label-text form__label form__label--legend legend" for="text">ОПИШИТЕ СВОИ ЭМОЦИИ</label>
+              <textarea class="form__textarea form__control--text" name="text" id="text" cols="30" rows="6" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
             </p>
           </fieldset>
           <p class="form__button-box">
             <button class="form__button form-button" type="submit">Отправить форму</button>
           </p>
-          <p class="form__text">* — обязательные поля</p>
-        </form>
-      </div>
+          <p class="form__text"><span class="legend">*</span> — обязательные поля</p>
+        </div>
+      </form>
+
     </section>
   </main>
 
@@ -138,17 +156,17 @@
       </div>
       <ul class="socials-list footer__socials-list">
         <li class="socials-list__item">
-          <a class="socials-list__link" href="#">
+          <a class="socials-list__link socials-list__link--twitter" href="#">
             <span class="visually-hidden">Твиттер</span>
           </a>
         </li>
         <li class="socials-list__item">
-          <a class="socials-list__link" href="#">
+          <a class="socials-list__link socials-list__link--facebook" href="#">
             <span class="visually-hidden">Фейсбук</span>
           </a>
         </li>
         <li class="socials-list__item">
-          <a class="socials-list__link" href="#">
+          <a class="socials-list__link socials-list__link--youtube" href="#">
             <span class="visually-hidden">Ютуб</span>
           </a>
         </li>
@@ -166,7 +184,7 @@
   </footer>
 
   <section class="modal modal--error">
-    <div class="modal-wrap">
+    <div class="modal__wrap">
       <h3 class="modal__title">Что-то пошло не так!</h3>
       <p class="modal__text">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p>
       <button class="modal__button form-button" type="button">ОК</button>
@@ -174,13 +192,13 @@
   </section>
 
   <section class="modal modal--success">
-    <div class="modal-wrap">
+    <div class="modal__wrap">
       <h3 class="modal__title">Ваша заявка отправлена</h3>
-      <p class="modal__text">Спасибо за ваше участие, ваша заявка уже поступила к нам. В ближайшее время мы рассмотрим ее и оповестим вас.</p>
-      <p class="modal__button-box">
-      <button class="modal__button form-button" type="button">ЗАКРЫТЬ ОКНО</button>
-      </p>
+      <p class="modal__text-success">Спасибо за ваше участие, ваша заявка уже поступила к нам. В ближайшее время мы рассмотрим ее и оповестим вас.</p>
     </div>
+    <p class="modal__button-box">
+    <button class="modal__button form-button" type="button">ЗАКРЫТЬ ОКНО</button>
+    </p>
   </section>
 
 </body>
