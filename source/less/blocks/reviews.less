@@ -21,5 +21,41 @@
 
 .reviews__autor-info {
   display: none;
+  line-height: 30px;
+  margin: 0 0 49px;
 }
 
+@media (min-width: @tablet-width) {
+  .reviews__item {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .reviews__autor {
+    padding: 0;
+    font-size: 20px;
+    margin-bottom: 17px;
+  }
+
+  .reviews__text {
+    font-size: 18px;
+    margin-bottom: 50px;
+    padding-top: 109px;
+    order: -1;
+  }
+
+  .reviews__autor-info {
+    display: block;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .reviews__autor {
+    font-size: 24px;
+  }
+
+  .reviews__autor-info {
+    font-size: 18px;
+  }
+
+}

@@ -5,6 +5,9 @@
 
 .header__box {
   border-bottom: 1px solid @black;
+}
+
+.header__wrapper {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
@@ -16,4 +19,39 @@
 .header__logo {
   display: block;
   padding: 23px 0;
+}
+
+@media (min-width: @tablet-width) {
+  .header__wrapper {
+    width: 660px;
+  }
+
+  .header__logo {
+    padding: 27px 0 43px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+
+  .header__wrapper {
+    width: 167px;
+    padding: 0;
+  }
+
+  .header__toggle {
+    display: none;
+  }
+
+  .header__box {
+    border: none;
+  }
+
+  .header__container {
+    margin: 0 auto;
+    width: 1200px;
+    padding: 0 130px;
+    display: flex;
+    justify-content: space-between;
+  }
+
 }
