@@ -10,6 +10,27 @@
   text-transform: uppercase;
 }
 
+.table__th--label {
+  position: relative;
+  overflow: hidden;
+}
+
+.table__th-label {
+  font-size: 14px;
+  font-weight: 400;
+  text-align: center;
+  width: 120px;
+  transform: rotate(-45deg);
+  background-color: @pink;
+  position: absolute;
+  top: 15px;
+  left: -40px;
+}
+
+.table__th--hidden {
+  background-color: @fon-gray;
+}
+
 .table__price {
   font-size: 18px;
   line-height: 30px;
@@ -29,7 +50,20 @@
   white-space: nowrap;
 }
 
+@media (max-width: @tablet-width) {
+  .table {
+    width: 1120px;
+    margin-left: -531px;
+  }
+}
+
 @media (min-width: @tablet-width) {
+
+  .table {
+    width: 610px;
+    margin: 0 auto;
+  }
+
   .table__td {
     width: 153px;
     padding: 18px 15px 17px;
@@ -44,9 +78,21 @@
   .table__td-hidden {
     display: none;
   }
+
+  .table__th-label {
+    height: 20px;
+    top: 15px;
+    left: -45px;
+  }
 }
 
 @media (min-width: @desktop-width) {
+
+  .table {
+    width: 934px;
+    margin: 0 auto;
+  }
+
   .table__td {
     width: 233px;
     font-size: 18px;
