@@ -33,9 +33,24 @@
   padding: 102px 0 51px;
 }
 
-.page__main {
-  background-image: url(../img/back-mobile.png);
-  background-repeat: no-repeat;
-  background-position: top center;
-  display: block;
+@media (min-width: @tablet-width) {
+
+  .page__body-presentation {
+    margin-bottom: 58px;
+  }
+
+  .page__body {
+    min-width: 660px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+
+  .page__body {
+    min-width: 1200px;
+  }
+
+  .page__body-presentation {
+    margin-bottom: 77px;
+  }
 }
