@@ -1,8 +1,14 @@
-.presentation {
+.presentation__box-title {
   background-image: url(../img/back-mobile.png);
   background-repeat: no-repeat;
   background-position: top center;
   display: block;
+  height: 462px;
+  width: 100%;
+}
+
+.presentation__wrap-title {
+  position: relative;
 }
 
 .presentation__title {
@@ -16,15 +22,10 @@
   width: 280px;
 }
 
-.presentation__box-img {
-  width: 320px;
-  margin: 0 auto;
-  position: relative;
-}
-
 .presentation__img {
-  display: block;
-  margin: 0 auto;
+  position: absolute;
+  top: 176px;
+  left: -2px;
 }
 
 .presentation__lower {
@@ -48,7 +49,7 @@
 
   &:active {
     background-color: @white;
-    color: @pink-light;
+    color: @pink;
   }
 }
 
@@ -67,7 +68,7 @@
 
 @media (min-width: @mobile-width) {
 
-  .presentation {
+  .presentation__box-title {
     background-position: center center;
     background-size: cover;
   }
@@ -75,8 +76,20 @@
 
 @media (min-width: @tablet-width) {
 
+  .presentation__box-title {
+    height: min-content;
+    background-image: none;
+  }
+
   .presentation {
     background-image: url(../img/back-tablet.png);
+    background-repeat: no-repeat;
+    background-position: top center;
+    display: block;
+    height: 462px;
+    width: 100%;
+    height: 729px;
+    background-size: cover;
   }
 
   .presentation__lower {
@@ -84,9 +97,8 @@
   }
 
   .presentation__img {
-    position: absolute;
-    top: -50px;
-    right: -150px;
+    top: 184px;
+    left: 350px;
   }
 
   .presentation__title {
@@ -117,6 +129,7 @@
 
   .presentation {
     background-image: url(../img/back-desktop.png);
+    height: 853px;
   }
 
   .presentation__title {
@@ -132,5 +145,10 @@
 
   .presentation__list {
     margin-bottom: 59px;
+  }
+
+  .presentation__img {
+    top: 176px;
+    left: 752px;
   }
 }
