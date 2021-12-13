@@ -3,6 +3,40 @@
 }
 
 .contest__text {
+  width: 280px;
   padding-top: 54px;
-  margin-bottom: 55px;
+  margin: 0 auto 55px;
+}
+
+@media (max-width: @tablet-width) {
+
+  .contest__text-hidden {
+    display: none;
+  }
+}
+
+@media (min-width: @tablet-width) {
+
+  .contest__text {
+    width: 490px;
+    font-size: 18px;
+    padding-top: 100px;
+    margin-bottom: 80px;
+  }
+
+  .contest__text-hidden {
+    display: block;
+  }
+
+  .contest__form {
+    margin: 0 auto;
+  }
+}
+
+@media (min-width: @desktop-width) {
+
+  .contest__text {
+    width: 756px;
+    margin-bottom: 70px;
+  }
 }

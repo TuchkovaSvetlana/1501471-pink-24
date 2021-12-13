@@ -1,3 +1,8 @@
+.form {
+  display: flex;
+  flex-direction: column;
+}
+
 .form__fildset {
   border: none;
   margin: 0;
@@ -7,6 +12,16 @@
 .form__wrap {
   margin: 0;
   margin-bottom: 29px;
+}
+
+.form__control {
+  border-color: @border-gray;
+  &:hover {
+    border-color: @blue;
+  }
+  &:active {
+    border-color: @pink;
+  }
 }
 
 .form__label--legend {
@@ -41,7 +56,7 @@
   list-style: none;
 }
 
-.form__fildset-box {
+.form__achievement,.form__applications {
   background-color: @fon-gray;
 }
 
@@ -66,16 +81,12 @@
 
 .form__label-text {
   padding: 42px 0 0;
-  margin: 0 0 22px;
-  text-align: center;
+  margin: 0 auto 22px;
+  width: 184px;
 }
 
 .form__control--text::placeholder {
   color: @blue;
-}
-
-.form__wrap-textarea {
-  margin: 0 0 37px;
 }
 
 .form__button-box {
@@ -89,3 +100,245 @@
   text-transform: uppercase;
   color: @blue;
 }
+
+.form__textarea {
+  margin-bottom: 37px;
+}
+
+.form__fildset {
+  width: 276px;
+  margin: 0 auto;
+}
+
+.form__footer {
+  width: 276px;
+  margin: 0 auto;
+}
+
+@media (max-width: @tablet-width) {
+  .form__contacts-legend {
+    display: none;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .form__wrap {
+    display: flex;
+  }
+
+  .form__box {
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .form__label--legend {
+    width: max-content;
+    margin: 0 20px 0 0;
+    align-self: center;
+  }
+
+  .form__control--text {
+    width: 100%;
+  }
+
+  .form__fildset {
+    width: 616px;
+    margin: 0 auto;
+  }
+
+  .form__footer {
+    width: 616px;
+    margin: 0 auto;
+  }
+
+  .form__applications {
+    background-color: @white;
+    order: -4;
+  }
+
+  .form__achievement {
+    background-color: @white;
+    order: -2;
+  }
+
+  .form__main-info {
+    order: -5;
+  }
+
+  .form__contacts {
+    order: -3;
+  }
+
+  .form__reviews {
+    order: -1;
+  }
+
+  .form__legend {
+    width: max-content;
+  }
+
+  .form__applications-fildset,.form__fildset-contacts,.form__achievement-fildset,.form__reviews-fildset {
+    border: 2px solid @border-gray;
+    border-radius: 1px;
+    margin-bottom: 65px;
+    padding: 0;
+  }
+
+  .form__applications .form__legend,.form__achievement-legend {
+    padding: 0 20px;
+  }
+
+  .form__label--radio,.form__label--checkbox {
+    padding-left: 120px;
+  }
+
+  .form__contacts-legend {
+    padding: 0 20px;
+    display: block;
+    color: @pink;
+  }
+
+  .form__contacts-wrap {
+    display: flex;
+    flex-direction: column-reverse;
+    margin: 0;
+  }
+
+  .form__contacts-label {
+    margin: 0 0 40px 99px;
+    align-self: flex-start;
+  }
+
+  .form__contacts-input {
+    width: 437px;
+    padding-right: 59px;
+    margin: 0 auto 22px;
+    display: block;
+  }
+
+  .form__contacts-input::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 59px;
+    height: 59px;
+    background-color: @border-gray;
+    background-image: url(../img/phone-icon.svg);
+    background-repeat: no-repeat;
+  }
+
+  .form__label-text {
+    padding: 0 20px;
+    margin: 0 auto 42px;
+  }
+
+  .form__textarea {
+    width: 496px;
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 53px;
+  }
+
+  .form__footer {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .form__text {
+    margin: 0;
+    align-self: center;
+  }
+
+  .form__button-box {
+    margin: 0;
+  }
+}
+
+@media (min-width: @desktop-width) {
+
+  .form__fildset {
+    width: 936px;
+  }
+
+  .form__fildset-info {
+    width: 433px;
+    margin: 0;
+  }
+
+  .form__applications-fildset {
+    width: 431px;
+    margin: 0 0 64px;
+  }
+
+  .form__footer {
+    width: 936px;
+    margin: 0 auto;
+  }
+
+  .form__fildset-contacts {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 10px 60px 23px 60px;
+  }
+
+  .form__contacts-label {
+    margin: 0 0 23px 17px;
+    align-self: flex-start;
+  }
+
+  .form__contacts-input {
+    width: 312px;
+    margin: 0 0 22px;
+    display: block;
+  }
+
+  .form__contacts-legend {
+    margin-bottom: 39px;
+  }
+
+  .form__achievement-fildset {
+    padding: 10px 64px 30px 60px;
+    margin-bottom: 64px;
+  }
+
+  .form__achievement-list {
+    width: 817px;
+    padding-bottom: 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  .form__label--checkbox {
+    padding-left: 70px;
+  }
+
+  .form__textarea {
+    width: 816px;
+    height: 124px;
+  }
+
+  .form__wrapper {
+    margin: 0 auto;
+    width: 937px;
+    position: relative;
+  }
+
+  .form__applications {
+    position: absolute;
+    top: -10px;
+    right: 0;
+  }
+
+  .form__applications-fildset {
+    margin: 0;
+  }
+
+  .form__wrap:not(:last-child) {
+    margin-bottom: 57px;
+  }
+
+}
+

@@ -1,0 +1,32 @@
+.title-box {
+  background-image: url(../img/back-mobile.png);
+  background-repeat: no-repeat;
+  background-position: top center;
+  display: block;
+  height: 237px;
+  width: 100%;
+}
+
+@media (min-width: @mobile-width) {
+
+  .title-box {
+    background-position: top center;
+    background-size: cover;
+  }
+}
+
+@media (min-width: @tablet-width) {
+
+  .title-box {
+    background-image: url(../img/back-tablet.png);
+    height: 440px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+
+  .title-box {
+    background-image: url(../img/back-desktop.png);
+    height: 394px;
+  }
+}

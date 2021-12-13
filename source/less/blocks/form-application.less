@@ -4,6 +4,30 @@
   margin-bottom: 40px;
 }
 
+.form-application__img-box {
+  width: 280px;
+  margin: 0 auto;
+}
+
+.form-application__button-function {
+  border: none;
+  cursor: pointer;
+  background-color: transparent;
+  width: 48px;
+  height: 43px;
+}
+
+.form-application__button-img path {
+  fill: @blue-light;
+  &:hover {
+    fill: @blue-btn-light;
+  }
+}
+
+.form-application__button-img--active path {
+  fill: @pink;
+}
+
 .form-application__button {
   width: 280px;
   border: 3px solid @blue-socials;
@@ -12,19 +36,107 @@
   font-size: 18px;
   line-height: 18px;
   font-weight: 700;
+  &:hover {
+    color: @blue-light;
+    border-color: @blue-light;
+  }
+  &:active {
+    color: @white-light;
+    background-color: @blue-light;
+    border: none;
+    padding: 18px 5px 18px;
+  }
 }
 
 .form-application__button--upload {
   border: 3px solid @pink;
   color: @pink;
   margin-bottom: 12px;
+  &:hover {
+    background-color: @pink;
+    color: @white;
+    border: none;
+    padding: 18px 5px 18px;
+  }
+  &:active {
+    background-color: @pink;
+    color: @white-light;
+    border: none;
+    padding: 18px 5px 18px;
+  }
 }
 
 .form-application__button-box {
+  margin: 0 auto;
+  width: 280px;
   padding: 38px 0 41px;
 }
 
 .form-application__content {
   margin: 0 auto;
   padding-bottom: 30px;
+}
+
+@media (min-width: @tablet-width) {
+  .form-application {
+    width: 620px;
+    display: flex;
+  }
+
+  .form-application__functions {
+    width: 275px;
+  }
+
+  .form-application__img {
+    padding-top: 0;
+    margin: 57px 45px 54px 0;
+  }
+
+  .form-application__img-box {
+    width: 300px;
+    margin: 0;
+  }
+
+  .form-application__content {
+    margin: 0;
+  }
+
+  .form-application__button {
+    width: 260px;
+  }
+
+  .form-application__button-box {
+    width: 275px;
+    margin: 0;
+  }
+}
+
+@media (min-width: @desktop-width) {
+
+  .form-application {
+    width: 800px;
+  }
+
+  .form-application__button-box {
+    width: 410px;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .form-application__functions {
+    width: 410px;
+    margin-left: 90px;
+  }
+
+  .form-application__button {
+    width: 183px;
+  }
+
+  .form-application__button--upload {
+    margin: 0 44px 0 0;
+  }
+
+  .form-application__img {
+    margin-left: 10px;
+  }
 }
