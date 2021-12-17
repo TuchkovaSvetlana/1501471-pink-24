@@ -5,3 +5,61 @@
 .logo__img:active path {
   fill: @white-light;
 }
+
+@media (max-width: @tablet-width) {
+
+  .logo__img-desktop {
+    display: none;
+  }
+
+  .logo__img-tablet {
+    display: none;
+  }
+}
+
+@media (min-width: @tablet-width) {
+
+  .logo__img-desktop {
+    display: none;
+  }
+
+  .logo__img {
+    display: none;
+  }
+
+  .logo__img-tablet {
+    display: block;
+  }
+
+  .logo__img-tablet {
+    &:hover path {
+      fill: @pink;
+    }
+
+    &:active path {
+      fill: @white-light;
+    }
+  }
+}
+
+@media (min-width: @desktop-width) {
+
+  .logo__img-desktop {
+    display: block;
+  }
+
+  .logo__img-tablet {
+    display: none;
+  }
+
+  .logo__img-desktop {
+    &:hover path {
+      fill: @pink;
+    }
+
+    &:active path {
+      fill: @white-light;
+    }
+  }
+
+}

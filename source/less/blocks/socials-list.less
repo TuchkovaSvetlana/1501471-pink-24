@@ -1,5 +1,5 @@
 .socials-list {
-  width: 176px;
+  width: 175px;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
@@ -20,6 +20,22 @@
   }
   &:active path {
     fill: @pink-light;
+  }
+}
+
+@media (min-width: @tablet-width) {
+
+  .socials-list {
+    width: 190px;
+    padding: 0 15px 0 0;
+  }
+}
+
+@media (min-width: @desktop-width) {
+
+  .socials-list {
+    width: 200px;
+    padding: 10px 10px 10px 20px;
   }
 }
 

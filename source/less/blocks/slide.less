@@ -11,4 +11,32 @@
   .slide__navigation {
     display: block;
   }
+
+  .slide__navigation-indicator {
+    border: none;
+    cursor: pointer;
+    display: inline-block;
+    vertical-align: middle;
+    background-color: transparent;
+    width: 22px;
+    height: 41px;
+  }
+
+  .slide__navigation-indicator--back {
+    background-image: url(../img/left-btn.svg);
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    position: absolute;
+    top: 212px;
+    left: 130px;
+  }
+
+  .slide__navigation-indicator--next {
+    background-image: url(../img/right-btn.svg);
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    position: absolute;
+    top: 212px;
+    right: 130px;
+  }
 }
