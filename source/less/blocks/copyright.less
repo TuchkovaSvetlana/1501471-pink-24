@@ -18,9 +18,22 @@
   fill: @blue-light;
 }
 
+@media (min-width: @tablet-width) {
+  .copyright__img {
+    width: 28px;
+    height: 41px;
+    padding-top: 4px;
+  }
+}
+
 @media (min-width: @desktop-width) {
   .copyright__text {
     font-size: 18px;
+    margin-right: 12px;
+  }
+
+  .copyright__img {
+    padding-top: 8px;
   }
 }
 

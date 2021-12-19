@@ -1,34 +1,43 @@
 .slide-rates__item {
-  padding-top: 81px;
+  padding-top: 79px;
   margin-bottom: 42px;
 }
 
 .slide-rates__btn {
-  padding-bottom: 46px;
+  padding-bottom: 49px;
   margin: 0 auto;
 }
 
-@media (max-width: @tablet-width) {
-  .slide-rates {
-    width: 320px;
-    overflow: hidden;
-    margin: 0 auto;
-  }
+.slide-rates {
+  width: 320px;
+  overflow: hidden;
+  margin: 0 auto;
 }
 
+
 @media (min-width: @tablet-width) {
+
+  .slide-rates {
+    width: 620px;
+    margin: 0 auto;
+  }
+
   .slide-rates__btn {
     display: none;
   }
 
   .slide-rates__item {
     margin-bottom: 0;
-    padding-bottom: 70px;
+    padding: 50px 0 68px;
   }
 }
 
 @media (min-width: @desktop-width) {
+
+  .slide-rates {
+    width: 934px;
+  }
   .slide-rates__item {
-    padding-bottom: 90px;
+    padding: 68px 0 93px;
   }
 }

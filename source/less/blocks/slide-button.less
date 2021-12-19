@@ -2,23 +2,33 @@
   margin: 0;
   padding: 0;
   list-style: none;
-  width: 56px;
+  width: 58px;
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 
 .slide-button__switch {
   display: block;
   cursor: pointer;
-  background-color: @blue;
+  background-color: @blue-light;
   width: 6px;
   height: 6px;
   border: none;
   border-radius: 50%;
-  opacity: 0.3;
   padding: 0;
 }
 
 .slide-button__switch--active {
-  opacity: 1;
+  background-color: @white;
+  border: 3px solid @blue;
+  border-radius: 50%;
+  width: 10px;
+  height: 10px;
+}
+
+@media (min-width: @desktop-width) {
+  .slide-button {
+    display: none;
+  }
 }

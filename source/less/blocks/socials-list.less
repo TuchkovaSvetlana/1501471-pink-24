@@ -1,5 +1,5 @@
 .socials-list {
-  width: 176px;
+  width: 175px;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
@@ -11,8 +11,8 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 48px;
-  height: 48px;
+  width: 51px;
+  height: 51px;
   border: 3px solid @blue-socials;
   border-radius: 50%;
   &:hover {
@@ -20,6 +20,22 @@
   }
   &:active path {
     fill: @pink-light;
+  }
+}
+
+@media (min-width: @tablet-width) {
+
+  .socials-list {
+    width: 190px;
+    padding: 0 15px 0 0;
+  }
+}
+
+@media (min-width: @desktop-width) {
+
+  .socials-list {
+    width: 200px;
+    padding: 8px 10px 10px 18px;
   }
 }
 
