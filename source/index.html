@@ -8,7 +8,7 @@
   </head>
   <body class="page__body">
 
-    <header class="header page__body-header">
+    <header class="header header--open page__body-header">
       <div class="header__container">
         <div class="header__box">
           <div class="header__wrapper">
@@ -54,12 +54,12 @@
                 </defs>
                 </svg>
             </a>
-            <button class="header__toggle header__toggle--open" type="button">
+            <button class="header__toggle header__toggle--close" type="button">
               <span class="visually-hidden">Открыть меню</span>
             </button>
           </div>
         </div>
-        <nav class="nav nav--close header__nav">
+        <nav class="nav nav--open header__nav">
           <ul class="nav__list">
             <li class="nav__item">
               <a class="nav__link nav__link--active" href="#">Главная</a>
@@ -85,7 +85,7 @@
           <div class="wrapper presentation__wrap-title">
             <h2 class="presentation__title">Взгляните на жизнь иначе!</h2>
             <picture>
-              <source media="(min-width: 1200px)" srcset="img/presentation-deskyop.png 1x, img/presentation-desktop2x.png 2x">
+              <source media="(min-width: 1200px)" srcset="img/presentation-desktop.png 1x, img/presentation-desktop2x.png 2x">
               <source media="(min-width: 660px)" srcset="img/presentation-tablet.png 1x, img/presentation-tablet@2x.png 2x">
               <img class="presentation__img" src="img/presentation-mobile.png" width="320" height="286" srcset="img/presentation-mobile2x.png" alt="Демонстрация обработанной приложением фотографии">
             </picture>
@@ -270,7 +270,7 @@
       </section>
 
       <section class="contacts page__body-contacts">
-        <div class="wrapper">
+        <div class="wrapper contacts__wrap">
           <h2 class="contacts__title">Остались вопросы? Свяжитесь с нами!</h2>
           <div class="contacts__box-content">
             <div class="contacts__box contacts__box--phone">
@@ -297,7 +297,7 @@
           </div>
         </div>
         <div class="map-box contacts__map">
-          <iframe class="map-box__img" width="320" height="200" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.603625300316!2d30.320858716173465!3d59.93871916905408!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1639580421850!5m2!1sru!2sru" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+          <iframe class="map-box__img" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.603625300316!2d30.320858716173465!3d59.93871916905408!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1639580421850!5m2!1sru!2sru" width="320" height="200" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
         </div>
       </section>
     </main>
@@ -347,7 +347,7 @@
       </div>
     </footer>
 
-    <script src="js/script.js"></script>
+    <!-- <script src="js/script.js"></script> -->
 
   </body>
 </html>

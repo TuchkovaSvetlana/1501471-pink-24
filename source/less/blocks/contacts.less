@@ -1,6 +1,19 @@
 .contacts {
   text-align: center;
   background-color: @white;
+  position: relative;
+}
+
+.contacts__wrap::before {
+  content: "";
+  position: absolute;
+  top: 320px;
+  left: 0;
+  width: 100%;
+  min-height: 123px;
+  background-image: url(../img/triangle-mobile.png);
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .contacts__title {
@@ -46,6 +59,11 @@
   margin: 0 0 21px;
 }
 
+.contacts__box {
+  position: relative;
+  z-index: 1;
+}
+
 @media (min-width: @tablet-width) {
 
   .contacts__title {
@@ -54,6 +72,11 @@
     width: 370px;
     padding-top: 43px;
     margin: 0 auto 25px;
+  }
+
+  .contacts__wrap::before {
+    background-image: url(../img/triangle-tablet.png);
+    top: 350px;
   }
 
   .contacts__text {
@@ -96,6 +119,11 @@
     flex-wrap: wrap;
     margin: 0 auto;
     margin-bottom: 10px;
+  }
+
+  .contacts__wrap::before {
+    background-image: url(../img/triangle-desktop.png);
+    top: 345px;
   }
 
   .contacts__title {
