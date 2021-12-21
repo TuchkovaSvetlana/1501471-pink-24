@@ -1,19 +1,48 @@
 .application-button {
-  width: 195px;
+  width: 215px;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
+  position: relative;
+}
+
+.application-button__item:not(:last-child) {
+  margin-right: 5px;
 }
 
 @media (min-width: @tablet-width) {
   .application-button {
+    width: 277px;
     display: flex;
     flex-direction: column;
     margin-top: 50px;
   }
 
   .application-button__item {
+    width: 277px;
+    display: flex;
     align-self: flex-start;
+    border-bottom: 1px solid @blue-socials;
   }
+
+  .application-button__item:not(:last-child) {
+    margin-right: 0;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .application-button {
+    width: 415px;
+  }
+
+  .application-button__item {
+    width: 412px;
+
+    &:last-child {
+      border-bottom: none;
+    }
+  }
+
+
 }

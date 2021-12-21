@@ -8,7 +8,7 @@
 
 .modal__wrap {
   width: 320px;
-  padding: 0 10px 52px;
+  padding: 0 10px 50px;
 }
 
 .modal__title {
@@ -16,17 +16,17 @@
   line-height: 24px;
   font-weight: 700;
   text-align: center;
-  margin: 0 0 37px;
-  padding-top: 44px;
+  margin: 0 0 25px;
+  padding-top: 39px;
   color: @black;
 }
 
 .modal__text {
   text-align: center;
-  margin: 0 0 50px;
+  margin: 0 0 40px;
 }
 
-.modal__text-success {
+.modal__text--success {
   width: 266px;
   margin: 0 auto;
   margin-bottom: 35px;
@@ -34,8 +34,120 @@
 
 .modal__button-box {
   margin: 0;
-  padding: 52px 0;
+  padding: 50px 0;
   background-color: @fon-gray;
+}
+
+.modal--error {
+  position: absolute;
+  top: 1166px;
+  left: 50%;
+  margin-left: -160px;
+  display: none;
+}
+
+.modal--success {
+  position: absolute;
+  top: 1638px;
+  left: 50%;
+  margin-left: -160px;
+  display: none;
+}
+
+@media (min-width: @tablet-width) {
+  .modal {
+    width: 460px;
+  }
+
+  .modal--error {
+    top: 910px;
+    margin-left: -230px;
+  }
+
+  .modal--success {
+    top: 1383px;
+    margin-left: -230px;
+  }
+
+  .modal__wrap {
+    width: 460px;
+    padding: 0 10px 50px;
+  }
+
+  .modal__title {
+    width: 260px;
+    font-size: 30px;
+    line-height: 40px;
+    margin: 0 auto 25px;
+  }
+
+  .modal__text {
+    width: 300px;
+    margin: 0 auto 30px;
+    font-size: 18px;
+    line-height: 24px;
+  }
+
+  .modal__text--success br {
+    display: none;
+  }
+
+  .modal__text--success {
+    width: 320px;
+  }
+
+}
+
+@media (min-width:@desktop-width) {
+  .modal {
+    width: 780px;
+  }
+
+  .modal--error {
+    top: 820px;
+    margin-left: -390px;
+  }
+
+  .modal__wrap {
+    width: 780px;
+    padding: 0;
+  }
+
+  .modal__title {
+    width: 330px;
+    margin-bottom: 20px;
+  }
+
+  .modal__text {
+    width: 350px;
+    margin-bottom: 61px;
+  }
+
+  .modal__btn-error {
+    margin: 0;
+    padding: 52px 0;
+    background-color: @fon-gray;
+    width: 780px;
+  }
+
+  .modal--success {
+    top: 1277px;
+    margin-left: -390px;
+  }
+
+  .modal__title--success {
+    width: 400px;
+    margin-bottom: 23px;
+  }
+
+  .modal__text--success {
+    width: 380px;
+    margin-bottom: 38px;
+  }
+
+  .modal__button--success {
+    width: 456px;
+  }
 }
 
 

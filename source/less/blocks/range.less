@@ -18,3 +18,39 @@
     background-color: @pink;
   }
 }
+
+.range--active {
+  position: absolute;
+  top: 85px;
+  left: -13px;
+}
+
+.range--inactive {
+  display: none;
+}
+
+@media (min-width: @tablet-width) {
+
+  .range--inactive {
+    display: block;
+  }
+
+  .range {
+    display: flex;
+    align-items: center;
+  }
+
+  .range__scale {
+    width: 202px;
+  }
+
+  .range--active {
+    position: static;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .range__scale {
+    width: 288px;
+  }
+}
