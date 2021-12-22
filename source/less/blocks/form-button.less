@@ -1,7 +1,7 @@
 .form-button {
   display: inline-block;
   vertical-align: middle;
-  width: 276px;
+  width: 278px;
   color: @white;
   background-color: @grin;
   padding: 15px 0;
@@ -23,5 +23,11 @@
   &:disabled {
     background-color: @border-gray;
     border: 2px solid @border-gray;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .form-button {
+    width: 298px;
   }
 }

@@ -1,6 +1,9 @@
 .header {
   position: relative;
   z-index: 1;
+}
+
+.header--close {
   background-color: @light-black;
 }
 
@@ -8,7 +11,15 @@
   background-color: @blue;
 }
 
-.header__box {
+// .header__box {
+//   border-bottom: 1px solid @black;
+// }
+
+.header__box--close {
+  border-bottom: none;
+}
+
+.header__box--open {
   border-bottom: 1px solid @black;
 }
 
@@ -122,6 +133,12 @@
   transform: rotate(-45deg);
 }
 
+// @media (max-width: 659px) {
+//   .header--open {
+//     background-color: @blue;
+//   }
+// }
+
 @media (min-width: @tablet-width) {
   .header__wrapper {
     width: 660px;
@@ -137,6 +154,10 @@
 }
 
 @media (min-width: @desktop-width) {
+
+  .header {
+    background-color: @light-black;
+  }
 
   .header__logo {
     padding: 28px 0 35px;
