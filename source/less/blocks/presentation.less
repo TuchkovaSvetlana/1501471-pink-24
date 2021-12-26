@@ -7,6 +7,13 @@
   width: 100%;
 }
 
+@media (min-resolution: 2dppx) {
+  .presentation__box-title {
+    background-image: url(../img/back-mobile@2x.png);
+    background-size: cover;
+  }
+}
+
 .presentation__wrap-title {
   position: relative;
 }
@@ -92,6 +99,13 @@
     background-size: cover;
   }
 
+  @media (min-resolution: 2dppx) {
+    .presentation {
+      background-image: url(../img/back-tablet@2x.png);
+      background-size: cover;
+    }
+  }
+
   .presentation__lower {
     background-color: inherit;
   }
@@ -138,6 +152,13 @@
   .presentation {
     background-image: url(../img/back-desktop.png);
     height: 853px;
+  }
+
+  @media (min-resolution: 2dppx) {
+    .presentation {
+      background-image: url(../img/back-desktop@2x.png);
+      background-size: cover;
+    }
   }
 
   .presentation__title {

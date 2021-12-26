@@ -1,13 +1,44 @@
 .glasses-logo__img {
   display: block;
   margin: 0 auto 40px;
-  padding-top: 40px;
+  margin-top: 40px;
+  width: 145px;
+  height: 40px;
+}
+
+.glasses-logo__link:hover .glasses-logo__logo  {
+  fill: @pink;
+}
+
+.glasses-logo__link:active .glasses-logo__img {
+  opacity: 0.3;
+}
+
+.glasses-logo__img-desktop {
+  display: none;
 }
 
 @media (min-width: @tablet-width) {
 
   .glasses-logo__img {
-    padding-top: 25px;
+    margin-top: 25px;
   }
 
+}
+
+@media (min-width: @desktop-width) {
+  .glasses-logo__img {
+    display: none;
+  }
+  .glasses-logo__img-desktop {
+    display: block;
+  }
+
+  .glasses-logo__link:active .glasses-logo__img-desktop {
+    opacity: 0.3;
+  }
+
+  .glasses-logo__link:hover .glasses-logo__img-desktop path {
+    fill: @pink;
+  }
 }

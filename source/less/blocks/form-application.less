@@ -18,16 +18,18 @@
   background-color: transparent;
   width: 48px;
   height: 43px;
+  padding: 0;
 }
 
-.form-application__button-img path {
+.form-application__button-function .form-application__button-img path {
   fill: @blue-light;
-  &:hover {
-    fill: @blue-btn-light;
-  }
 }
 
-.form-application__button-img--active path {
+.form-application__button-function:hover .form-application__button-img path {
+  fill: @blue-btn-light;
+}
+
+.form-application__button-function--active .form-application__button-img path {
   fill: @pink;
 }
 
@@ -77,8 +79,7 @@
 
 .form-application__content {
   margin: 0 auto;
-  padding-right: 10px;
-  padding-bottom: 78px;
+  padding: 4px 10px 74px 5px;
 }
 
 .form-application__box {
@@ -134,7 +135,7 @@
     height: 16px;
   }
 
-  .form-application__button-img path {
+  .form-application__button-function .form-application__button-img path {
     fill: @pink;
   }
 
@@ -222,13 +223,13 @@
   .form-application__button-function {
 
     &--crop {
-      margin: 5px 67px 25px -5px;
+      margin: 5px 62px 25px 0;
     }
     &--fill {
-      margin: 17px 67px 25px -5px;
+      margin: 17px 62px 25px 0;
     }
     &--contrast {
-      margin: 19px 62px 25px 0;
+      margin: 19px 56px 25px 6px;
     }
 
   }

@@ -13,6 +13,13 @@
   background-position: center;
 }
 
+@media (min-resolution: 2dppx) {
+  .map-box {
+    background-image: url(../img/map@2x.png);
+    background-size: 320px auto;
+  }
+}
+
 
 @media (min-width: @tablet-width) {
 
@@ -25,6 +32,13 @@
     min-width: 660px;
     height: 374px;
     background-image: url(../img/map-tablet.png);
+  }
+
+  @media (min-resolution: 2dppx) {
+    .map-box {
+      background-image: url(../img/map-tablet@2x.png);
+      background-size: 660px auto;
+    }
   }
 }
 
@@ -41,4 +55,10 @@
     background-image: url(../img/map-desktop.png);
   }
 
+  @media (min-resolution: 2dppx) {
+    .map-box {
+      background-image: url(../img/map-desktop@2x.png);
+      background-size: 1200px auto;
+    }
+  }
 }

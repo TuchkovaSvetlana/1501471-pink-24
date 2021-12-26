@@ -161,10 +161,15 @@
   border: 2px solid @border-gray;
 }
 
-.form__control--radio:checked + label::before {
-  background-image: url(../img/forma.img/radio.svg);
-  background-repeat: no-repeat;
-  background-position: 50% center;
+.form__control--radio:checked + label::after {
+  content: "";
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  border-radius: 50%;
+  border: 8px solid @pink;
+  top: 13px;
+  left: 12px;
 }
 
 .form__control:hover + label::before {
@@ -180,8 +185,9 @@
   &:hover {
     border-color: @blue;
   }
-  &:active {
+  &:focus {
     border-color: @pink;
+    outline: none;
   }
 }
 
@@ -295,6 +301,11 @@
     left: 58px;
   }
 
+  .form__control--radio:checked + label::after {
+    top: 13px;
+    left: 70px;
+  }
+
   .form__contacts-legend {
     padding: 0 30px;
     display: block;
@@ -398,6 +409,11 @@
 
   .form__control--radio + label::before {
     left: 70px;
+  }
+
+  .form__control--radio:checked + label::after {
+    top: 13px;
+    left: 82px;
   }
 
   .form__fildset {
