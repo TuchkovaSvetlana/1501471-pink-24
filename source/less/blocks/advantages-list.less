@@ -48,10 +48,9 @@
 @media (min-width: @desktop-width) {
   .advantages-list {
     width: 940px;
-    padding: 0 20px 0 24px;
     display: grid;
-    grid-template-columns: 252px 252px 252px;
-    grid-gap: 68px;
+    grid-template-columns: 300px 300px 300px;
+    grid-gap: 20px;
   }
 
   .advantages-list__text br {
@@ -71,9 +70,10 @@
   .advantages-list__text {
     font-size: 18px;
     line-height: 30px;
-    margin-bottom: 59px;
+    margin: 0 auto 59px;
     text-align: center;
     padding: 0 5px;
+    width: 252px;
   }
 
   .advantages-list__title br {
@@ -84,10 +84,24 @@
     margin-bottom: 0;
   }
 
+  .advantages-list__item::before {
+    content: "";
+    position: absolute;
+    display: block;
+    top: 292px;
+    left: 0;
+    height: 17px;
+    width: 300px;
+    background: linear-gradient(90deg, rgba(0, 0, 0, 0) 0%, #000000 49.8%, rgba(0, 0, 0, 0) 93.23%);
+    opacity: 0.3;
+    filter: blur(4px);
+  }
+
   .advantages-list__item {
     padding-top: 300px;
     background-repeat: no-repeat;
-    background-position: 30px 0;
+    background-position: 55px 0;
+    position: relative;
   }
 
   .advantages-list__item--of {
@@ -96,12 +110,29 @@
 
   .advantages-list__item--on {
     background-image: url(../img/advantages-desktop2.png);
-    background-position: 32px 0;
+    background-position: 57px 0;
   }
 
   .advantages-list__item--smail {
     background-image: url(../img/advantages-desktop3.png);
-    background-position: 35px 0;
+    background-position: 60px 0;
+  }
+
+  @media (min-resolution: 2dppx) {
+    .advantages-list__item--of {
+      background-image: url(../img/advantages-desktop1@2x.png);
+      background-size: 186px auto;
+    }
+
+    .advantages-list__item--on {
+      background-image: url(../img/advantages-desktop2@2x.png);
+      background-size: 186px auto;
+    }
+
+    .advantages-list__item--smail {
+      background-image: url(../img/advantages-desktop3@2x.png);
+      background-size: 186px auto;
+    }
   }
 
 
