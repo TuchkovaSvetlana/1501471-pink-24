@@ -44,8 +44,10 @@
 
 .gallery__content-box {
   background-color: @fon-gray;
-  padding-bottom: 25px;
+  padding-bottom: 23px;
   margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
 }
 
 .gallery__content-box--size {
@@ -70,39 +72,80 @@
 }
 
 .gallery__item-text {
-  quotes: none;
-  display: block;
+  margin: 0;
   padding: 18px 10px 16px 16px;
 }
 
 .gallery__item-content {
   display: block;
+  quotes: none;
 }
 
 .gallery__item-button {
-  background-image: url(../img/catalog.img/gallery-like.svg);
-  background-repeat: no-repeat;
-  background-color: transparent;
-  display: block;
-  width: 13px;
-  height: 12px;
   margin: 0 18px 0 17px;
-  padding: 0 140px 0 0;
   border: none;
   cursor: pointer;
+  background-color: transparent;
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: flex-end;
+  padding: 0;
 }
 
 .gallery__likes-number {
   display: inline-block;
   vertical-align: top;
   white-space: nowrap;
-  padding-left: 30px;
   font-size: 12px;
   color: @pink;
   text-transform: uppercase;
 }
 
+.gallery__item-text--position {
+  padding: 0;
+  margin: 0;
+}
+
+.gallery__item-content--position {
+  margin: 0 0 16px;
+}
+
+.gallery__item-button--position {
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: flex-end;
+}
+
+.gallery__likes-number--position {
+  padding: 0;
+  margin: 0;
+}
+
+.gallery__likes-img {
+  align-self: center;
+  margin-right: 19px;
+  width: 13px;
+  height: 12px;
+  display: block;
+}
+
+.gallery__content-box--position {
+  margin: 0;
+  padding: 18px 10px 23px 17px;
+  margin-bottom: 20px;
+}
+
 @media (min-width: @tablet-width) {
+
+  .gallery__item-button {
+    width: 289px;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 0;
+    padding-left: 30px;
+  }
 
   .gallery__item-img {
     width: 300px;
@@ -114,35 +157,12 @@
     height: 509px;
   }
 
-  .gallery__item-button {
-    background-position: center right;
-    padding: 0 120px 0 0;
-  }
-
-  .gallery__item-button--main {
-    position: absolute;
-    top: 30px;
-    left: 453px;
-  }
-
-  .gallery__item-content {
-    padding-bottom: 20px;
-  }
-
   .gallery__item {
-    position: relative;
     background-color: @fon-gray;
   }
 
   .gallery__item-wrap {
     background-color: @white;
-  }
-
-  .gallery__item-button--position {
-    position: absolute;
-    bottom: 30px;
-    left: 12px;
-    padding-right: 240px;
   }
 
   .gallery__item-text br {
@@ -151,14 +171,15 @@
 
   .gallery__item-text {
     padding: 23px 20px 15px 30px;
+    min-height: 113px;
   }
 
-  .gallery__item-text--wrap {
+  .gallery__item-text--position {
+    min-height: 20px;
+  }
+
+  .gallery__item-text--position {
     padding-bottom: 0;
-  }
-
-  .gallery__likes-number {
-    padding-left: 0;
   }
 
   .gallery__text-title {
@@ -176,17 +197,11 @@
   }
 
   .gallery__content-box {
-    padding-bottom: 5px;
-  }
-
-  .gallery__content-box--position {
-    position: relative;
-    margin-bottom: 50px;
+    padding-bottom: 28px;
   }
 
   .gallery__content-box--size {
     width: 300px;
-    min-height: 155px;
     margin: 0 auto;
   }
 
@@ -207,9 +222,49 @@
     margin-bottom: 70px;
   }
 
+  .gallery__content-box--position {
+    flex-direction: row;
+    padding: 23px 10px 25px 30px;
+    margin-bottom: 50px;
+    flex-wrap: wrap;
+  }
+
+  .gallery__item-text--position {
+    order: -3;
+    padding: 0;
+    margin-right: auto;
+  }
+
+  .gallery__item-content--position {
+    order: -1;
+    margin: 0;
+  }
+
+  .gallery__item-button--position {
+    order: -2;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+  }
+
+  .gallery__likes-number--position {
+    align-self: center;
+    margin-right: 18px;
+  }
+
+  .gallery__item-content--position br {
+    display: none;
+  }
+
 }
 
 @media (min-width: @desktop-width) {
+
+  .gallery__item-button {
+    padding-left: 27px;
+  }
 
   .gallery__img-main {
     min-width: 1200px;
@@ -239,22 +294,8 @@
     left: 930px;
   }
 
-  .gallery__item-button--main {
-    left: 773px;
-  }
-
-  .gallery__item-button--position {
-    bottom: 29px;
-    left: 10px;
-    padding-right: 242px;
-  }
-
   .gallery__content-box {
-    padding-bottom: 4px;
-  }
-
-  .gallery__content-box--position {
-    margin-bottom: 50px;
+    padding-bottom: 28px;
   }
 
   .gallery__list {
@@ -272,6 +313,15 @@
 
   .gallery__text-content {
     padding-bottom: 67px;
+  }
+
+  .gallery__content-box--position {
+    padding: 24px 10px 23px 27px;
+    margin-bottom: 50px;
+  }
+
+  .gallery__item-text--position {
+    padding: 0;
   }
 
 }

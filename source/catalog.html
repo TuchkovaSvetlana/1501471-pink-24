@@ -8,7 +8,10 @@
     <link rel="icon" href="img/favicon.svg" type="image/svg+xml">
     <link rel="apple-touch-icon" href="img/favicon180.svg">
     <link rel="manifest" href="manifest.webmanifest">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="preload" href="fonts/opensans.woff2" type="font/woff2" as="font" crossorigin="anonymous">
+    <link rel="preload" href="fonts/opensansbold.woff2" type="font/woff2" as="font" crossorigin="anonymous">
+    <link rel="preload" href="fonts/opensanslight.woff2" type="font/woff2" as="font" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.min.css">
   </head>
 <body class="page__body">
 
@@ -111,11 +114,17 @@
         </div>
         <div class="wrapper">
           <div class="gallery__content-box gallery__content-box--position">
-            <q class="gallery__item-text gallery__item-text--wrap">
-              <cite class="gallery__item-autor">Анна</cite> <span class="gallery__item-time">(5 минут назад)</span>
-              <span class="gallery__item-content">Прыгать или нет? Напишите в комментарии свой совет и<br> смотрите прямую трансляцию в перископе, задавайте свои вопросы!</span>
+            <p class="gallery__item-text gallery__item-text--position">
+              <cite class="gallery__item-autor gallery__item-autor--position">Анна</cite> <span class="gallery__item-time">(5 минут назад)</span>
+            </p>
+            <q class="gallery__item-content gallery__item-content--position">Прыгать или нет? Напишите в комментарии свой  совет и<br> смотрите прямую трансляцию в перископе, задавайте свои вопросы!
             </q>
-            <button class="gallery__item-button gallery__item-button--main" type="button"><span class="gallery__likes-number">Нравится: 215</span></button>
+            <button class="gallery__item-button gallery__item-button--position" type="button">
+              <span class="gallery__likes-number gallery__likes-number--position">Нравится:215</span>
+              <svg class="gallery__likes-img" width="13" height="12" viewBox="0 0 13 12">
+                <use xlink:href="img/sprite.svg#gallery-like"></use>
+              </svg>
+            </button>
           </div>
         </div>
       </div>
@@ -129,11 +138,16 @@
             </picture>
           </a>
           <div class="gallery__content-box gallery__content-box--size">
-            <q class="gallery__item-text">
+            <p class="gallery__item-text">
               <cite class="gallery__item-autor">Левон</cite> <span class="gallery__item-time">(5 часов назад)</span>
-              <span class="gallery__item-content">Вчера он на луну летал, сегодня в руки к нам попал.</span>
-            </q>
-            <button class="gallery__item-button gallery__item-button--position" type="button"><span class="gallery__likes-number">Нравится: 356</span></button>
+              <q class="gallery__item-content">Вчера он на луну летал, сегодня в руки к нам попал.</q>
+            </p>
+            <button class="gallery__item-button" type="button">
+              <span class="gallery__likes-number">Нравится:356</span>
+              <svg class="gallery__likes-img" width="13" height="12" viewBox="0 0 13 12">
+                <use xlink:href="img/sprite.svg#gallery-like"></use>
+              </svg>
+            </button>
           </div>
         </li>
         <li class="gallery__item">
@@ -145,11 +159,16 @@
             </picture>
           </a>
           <div class="gallery__content-box gallery__content-box--size">
-            <q class="gallery__item-text">
+            <p class="gallery__item-text">
               <cite class="gallery__item-autor">Антон</cite> <span class="gallery__item-time">(12 часов назад)</span>
-              <span class="gallery__item-content">Соседи будут рады!</span>
-            </q>
-            <button class="gallery__item-button gallery__item-button--position" type="button"><span class="gallery__likes-number">Нравится: 666</span></button>
+              <q class="gallery__item-content">Соседи будут рады!</q>
+            </p>
+            <button class="gallery__item-button" type="button">
+              <span class="gallery__likes-number">Нравится:666</span>
+              <svg class="gallery__likes-img" width="13" height="12" viewBox="0 0 13 12">
+                <use xlink:href="img/sprite.svg#gallery-like"></use>
+              </svg>
+            </button>
           </div>
         </li>
         <li class="gallery__item">
@@ -161,11 +180,16 @@
             </picture>
           </a>
           <div class="gallery__content-box gallery__content-box--size">
-            <q class="gallery__item-text">
+            <p class="gallery__item-text">
               <cite class="gallery__item-autor">Борис</cite> <span class="gallery__item-time">(20 часов назад)</span>
-              <span class="gallery__item-content">Здесь могла быть ваша цитата о высоком и вечном.</span>
-            </q>
-            <button class="gallery__item-button gallery__item-button--position" type="button"><span class="gallery__likes-number">Нравится: 215</span></button>
+              <q class="gallery__item-content">Здесь могла быть ваша цитата о высоком и вечном.</q>
+            </p>
+            <button class="gallery__item-button" type="button">
+              <span class="gallery__likes-number">Нравится:215</span>
+              <svg class="gallery__likes-img" width="13" height="12" viewBox="0 0 13 12">
+                <use xlink:href="img/sprite.svg#gallery-like"></use>
+              </svg>
+            </button>
           </div>
         </li>
         <li class="gallery__item">
@@ -177,11 +201,16 @@
             </picture>
           </a>
           <div class="gallery__content-box gallery__content-box--size">
-            <q class="gallery__item-text">
+            <p class="gallery__item-text">
               <cite class="gallery__item-autor">Сергей</cite> <span class="gallery__item-time">(25 часов назад)</span>
-              <span class="gallery__item-content">Самая кубанская в мире!</span>
-            </q>
-            <button class="gallery__item-button gallery__item-button--position" type="button"><span class="gallery__likes-number">Нравится: 4</span></button>
+              <q class="gallery__item-content">Самая кубанская в мире!</q>
+            </p>
+            <button class="gallery__item-button" type="button">
+              <span class="gallery__likes-number">Нравится:4</span>
+              <svg class="gallery__likes-img" width="13" height="12" viewBox="0 0 13 12">
+                <use xlink:href="img/sprite.svg#gallery-like"></use>
+              </svg>
+            </button>
           </div>
         </li>
         <li class="gallery__item">
@@ -193,11 +222,16 @@
             </picture>
           </a>
           <div class="gallery__content-box gallery__content-box--size">
-            <q class="gallery__item-text">
+            <p class="gallery__item-text">
               <cite class="gallery__item-autor">Максим</cite> <span class="gallery__item-time">(40 часов назад)</span>
-              <span class="gallery__item-content">Где снег-то?</span>
-            </q>
-            <button class="gallery__item-button gallery__item-button--position" type="button"><span class="gallery__likes-number">Нравится: 150</span></button>
+              <q class="gallery__item-content">Где снег-то?</q>
+            </p>
+            <button class="gallery__item-button" type="button">
+              <span class="gallery__likes-number">Нравится:150</span>
+              <svg class="gallery__likes-img" width="13" height="12" viewBox="0 0 13 12">
+                <use xlink:href="img/sprite.svg#gallery-like"></use>
+              </svg>
+            </button>
           </div>
         </li>
         <li class="gallery__item">
@@ -209,11 +243,16 @@
             </picture>
           </a>
           <div class="gallery__content-box gallery__content-box--size">
-            <q class="gallery__item-text">
+            <p class="gallery__item-text">
               <cite class="gallery__item-autor">Надежда</cite> <span class="gallery__item-time">(45 часов назад)</span>
-              <span class="gallery__item-content">Всем GM и взаимные лайки!</span>
-            </q>
-            <button class="gallery__item-button gallery__item-button--position" type="button"><span class="gallery__likes-number">Нравится: 2560</span></button>
+              <q class="gallery__item-content">Всем GM и взаимные лайки!</q>
+            </p>
+            <button class="gallery__item-button" type="button">
+              <span class="gallery__likes-number">Нравится:2560</span>
+              <svg class="gallery__likes-img" width="13" height="12" viewBox="0 0 13 12">
+                <use xlink:href="img/sprite.svg#gallery-like"></use>
+              </svg>
+            </button>
           </div>
         </li>
       </ul>
@@ -238,7 +277,7 @@
               <button class="form-application__button-function form-application__button-function--active form-application__button-function--crop" type="button">
                 <span class="visually-hidden">Обрезать фото</span>
                 <svg class="form-application__button-img form-application__button-img--crop" width="44" height="44" viewBox="0 0 44 44" fill="#D22856">
-                  <use xlink:href="img/sprite.svg#close-btn"></use>
+                  <use xlink:href="img/sprite.svg#crop-btn"></use>
                 </svg>
               </button>
               <div class="range range--active">
