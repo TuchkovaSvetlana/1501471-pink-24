@@ -20,12 +20,7 @@
   margin: 0;
 }
 
-.advantages-list__text br,.advantages-list__title br {
-  display: none;
-}
-
 @media (min-width: @tablet-width) {
-
   .advantages-list {
     width: 310px;
     text-align: left;
@@ -38,14 +33,6 @@
   .advantages-list__item {
     margin-bottom: 35px;
   }
-
-  .advantages-list__text br {
-    display: block;
-  }
-
-  .advantages-list__title br {
-    display: none;
-  }
 }
 
 
@@ -55,10 +42,6 @@
     display: grid;
     grid-template-columns: 300px 300px 300px;
     grid-gap: 20px;
-  }
-
-  .advantages-list__text br {
-    display: none;
   }
 
   .advantages-list__title {
@@ -78,10 +61,6 @@
     text-align: center;
     padding: 0 5px;
     width: 252px;
-  }
-
-  .advantages-list__title br {
-    display: block;
   }
 
   .advantages-list__item:not(:last-child) {
@@ -109,35 +88,33 @@
   }
 
   .advantages-list__item--of {
-    background-image: url(../img/advantages-desktop1.png);
+    background-image: url("../img/advantages-desktop1.png");
   }
 
   .advantages-list__item--on {
-    background-image: url(../img/advantages-desktop2.png);
+    background-image: url("../img/advantages-desktop2.png");
     background-position: 57px 0;
   }
 
   .advantages-list__item--smail {
-    background-image: url(../img/advantages-desktop3.png);
+    background-image: url("../img/advantages-desktop3.png");
     background-position: 60px 0;
   }
 
   @media (min-resolution: 2dppx) {
     .advantages-list__item--of {
-      background-image: url(../img/advantages-desktop1@2x.png);
+      background-image: url("../img/advantages-desktop1@2x.png");
       background-size: 186px auto;
     }
 
     .advantages-list__item--on {
-      background-image: url(../img/advantages-desktop2@2x.png);
+      background-image: url("../img/advantages-desktop2@2x.png");
       background-size: 186px auto;
     }
 
     .advantages-list__item--smail {
-      background-image: url(../img/advantages-desktop3@2x.png);
+      background-image: url("../img/advantages-desktop3@2x.png");
       background-size: 186px auto;
     }
   }
-
-
 }

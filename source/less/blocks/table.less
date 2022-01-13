@@ -57,7 +57,7 @@
   content: "";
   width: 31px;
   height: 21px;
-  background-image: url(../img/yes.svg);
+  background-image: url("../img/yes.svg");
   background-repeat: no-repeat;
   position: absolute;
   top: 17px;
@@ -68,7 +68,7 @@
   content: "";
   width: 27px;
   height: 27px;
-  background-image: url(../img/no.svg);
+  background-image: url("../img/no.svg");
   background-repeat: no-repeat;
   position: absolute;
   top: 16px;
@@ -83,7 +83,6 @@
 }
 
 @media (min-width: @tablet-width) {
-
   .table__td--on::before {
     display: none;
   }
@@ -116,12 +115,6 @@
 
   .table__th-label {
     height: 20px;
-    top: 15px;
-    left: -45px;
-  }
-
-  .table__th-label {
-    height: 20px;
     width: 120px;
     top: 15px;
     left: -40px;
@@ -131,7 +124,7 @@
   .table__td--on {
     width: 31px;
     height: 21px;
-    background-image: url(../img/yes.svg);
+    background-image: url("../img/yes.svg");
     background-repeat: no-repeat;
     background-position: center center;
   }
@@ -139,14 +132,13 @@
   .table__td--off {
     width: 27px;
     height: 27px;
-    background-image: url(../img/no.svg);
+    background-image: url("../img/no.svg");
     background-repeat: no-repeat;
     background-position: center center;
   }
 }
 
 @media (min-width: @desktop-width) {
-
   .table {
     width: 934px;
     margin: 0 auto;
@@ -161,7 +153,8 @@
   .table__th {
     width: 233px;
     font-size: 18px;
-    padding: 20px 50px 25px;
+    text-align: center;
+    padding: 20px 50px 25px 48px;
   }
 
   .table__price {

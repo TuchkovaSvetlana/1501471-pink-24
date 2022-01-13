@@ -9,7 +9,7 @@
   min-width: 320px;
   margin: 0;
   padding: 0;
-  font-family: "Open Sans",Arial, sans-serif;
+  font-family: "Open Sans", "Arial", sans-serif;
   font-size: 14px;
   line-height: 24px;
   font-weight: 400;
@@ -40,19 +40,17 @@
 }
 
 .page__body-reviews::before {
-  content: '';
-  width: 100%;
-  height: 60px;
-  background: @fon-gray;
+  content: "";
   position: absolute;
-  bottom: 0;
+  top: 244px;
   left: 0;
-  transform: translateY(200%) skewY(175deg);
-  transform-origin: left;
+  width: 100%;
+  height: 200px;
+  background-color: @fon-gray;
+  clip-path: polygon(0 59%, 100% 50%, 100% 100%, 0 100%);
 }
 
 @media (min-width: @tablet-width) {
-
   .page__body-presentation {
     margin-bottom: 47px;
   }
@@ -72,13 +70,12 @@
   }
 
   .page__body-reviews::before {
-    height: 90px;
-    transform: translateY(162%) skewY(176deg);
+    top: 227px;
+    clip-path: polygon(0 71%, 100% 50%, 100% 100%, 0 100%);
   }
 }
 
 @media (min-width: @desktop-width) {
-
   .page__body {
     min-width: 1200px;
   }
@@ -101,7 +98,8 @@
   }
 
   .page__body-reviews::before {
-    height: 140px;
-    transform: translateY(100%) skewY(176deg);
+    height: 300px;
+    top: 255px;
+    clip-path: polygon(0 83%, 100% 50%, 100% 100%, 0 100%);
   }
 }
