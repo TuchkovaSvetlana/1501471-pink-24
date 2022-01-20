@@ -87,7 +87,7 @@
   height: 25px;
   padding: 0;
   position: relative;
-  display: none;
+  background-color: transparent;
 
   &::after,
   &::before {
@@ -112,6 +112,7 @@
     opacity: 0.3;
   }
 }
+
 
 .header__toggle--close::before {
   transform: rotate(45deg);
@@ -145,14 +146,6 @@
       display: none;
     }
 
-    .header__toggle--open {
-      display: block;
-    }
-
-    .header__toggle--close {
-      display: none;
-    }
-
     .header__box {
       border-bottom: none;
     }
@@ -168,14 +161,6 @@
 
     .header__nav {
       background-color: @blue;
-      display: block;
-    }
-
-    .header__toggle--open {
-      display: none;
-    }
-
-    .header__toggle--close {
       display: block;
     }
   }
