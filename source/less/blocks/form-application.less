@@ -29,12 +29,12 @@
   fill: @blue-btn-light;
 }
 
-.form-application__button-function--active .form-application__button-img {
+.form-application__button-function--active-mobile .form-application__button-img {
   fill: @pink;
 }
 
-.form-application__button-function--active:hover .form-application__button-img {
-  fill: @blue-light;
+.form-application__button-function--active-mobile:hover .form-application__button-img {
+  fill: @blue-btn-light;
 }
 
 .form-application__button {
@@ -113,6 +113,11 @@
   .form-application__button-function {
     width: 30px;
     height: 30px;
+  }
+
+  .form-application__button-function--active-tablet .form-application__button-img {
+    fill: @pink;
+    opacity: 1;
   }
 
   .form-application__button-function--crop {

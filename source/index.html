@@ -16,6 +16,7 @@
   <body class="page__body">
 
     <header class="header page__body-header header--no-js">
+      <!-- При добавлении класса "header--close" меню закрыто, "header--open" открыто -->
       <div class="header__container">
         <div class="header__box header__box--close">
           <div class="header__wrapper">
@@ -61,11 +62,9 @@
                 </defs>
                 </svg>
             </a>
-            <button class="header__toggle header__toggle--open" type="button">
-              <span class="visually-hidden">Открыть меню</span>
-            </button>
             <button class="header__toggle header__toggle--close" type="button">
-              <span class="visually-hidden">Закрыть меню</span>
+              <!-- Класс "header__toggle--close" изменяет вид кнопки на крестик -->
+              <span class="visually-hidden">Меню</span>
             </button>
           </div>
         </div>
@@ -95,8 +94,11 @@
           <div class="wrapper presentation__wrap-title">
             <h2 class="presentation__title">Взгляните на жизнь иначе!</h2>
             <picture>
-              <source media="(min-width: 1200px)" srcset="img/presentation-desktop.png 1x, img/presentation-desktop2x.png 2x">
+              <source type="image/webp" media="(min-width: 1200px)" srcset="img/presentation-desktop.webp 1x, img/presentation-desktop2x.webp 2x">
               <source type="image/webp" media="(min-width: 660px)" srcset="img/presentation-tablet.webp 1x, img/presentation-tablet@2x.webp 2x">
+              <source type="image/webp" srcset="img/presentation-mobile.webp 1x, img/presentation-mobile2x.webp 2x">
+              <source media="(min-width: 1200px)" srcset="img/presentation-desktop.png 1x, img/presentation-desktop2x.png 2x">
+              <source media="(min-width: 660px)" srcset="img/presentation-tablet.png 1x, img/presentation-tablet@2x.png 2x">
               <img class="presentation__img" src="img/presentation-mobile.png" width="320" height="286" srcset="img/presentation-mobile2x.png 2x" alt="Демонстрация обработанной приложением фотографии">
             </picture>
           </div>
@@ -195,9 +197,15 @@
             <div class="slide__navigation">
               <button class="slide__navigation-indicator slide__navigation-indicator--back">
                 <span class="visually-hidden">Назад</span>
+                <svg class="slide__navigation-img slide__navigation-img--back" width="22" height="41" viewBox="0 0 22 41" fill="#283645">
+                  <use xlink:href="img/sprite.svg#left-btn"></use>
+                </svg>
               </button>
               <button class="slide__navigation-indicator slide__navigation-indicator--next">
                 <span class="visually-hidden">Вперед</span>
+                <svg class="slide__navigation-img slide__navigation-img--next" width="22" height="41" viewBox="0 0 22 41" fill="#283645">
+                  <use xlink:href="img/sprite.svg#right-btn"></use>
+                </svg>
               </button>
             </div>
           </div>
@@ -374,8 +382,6 @@
         </div>
       </div>
     </footer>
-
-    <script src="js/script.js"></script>
 
   </body>
 </html>
