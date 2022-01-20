@@ -16,7 +16,7 @@
   <body class="page__body">
 
     <header class="header page__body-header header--no-js">
-      <!-- При добавлении класса "header--close" меню закрыто, "header--open" открыто -->
+      <!-- Удаляется класс "header--no-js", добавляется класс "header--close" меню закрыто, меняется при нажатии на кнопку на класс "header--open" меню открыто -->
       <div class="header__container">
         <div class="header__box header__box--close">
           <div class="header__wrapper">
@@ -62,8 +62,8 @@
                 </defs>
                 </svg>
             </a>
-            <button class="header__toggle header__toggle--close" type="button">
-              <!-- Класс "header__toggle--close" изменяет вид кнопки на крестик -->
+            <button class="header__toggle header__toggle--open" type="button">
+              <!-- при нажатии на кнопку удаляется класс "header__toggle--open",добавляется класс "header__toggle--close" изменяет вид кнопки на крестик -->
               <span class="visually-hidden">Меню</span>
             </button>
           </div>
